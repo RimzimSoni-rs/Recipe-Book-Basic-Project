@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Book</title>
+  <link rel="stylesheet" href="recipe.css">
+  
+</head>
+<body>
+  <header>
+    <h1>RECIPE BOOK</h1>
+  </header>
+  <main>
+    <!-- search bar -->
+    <section id="searchRecipes">
+        <h2>Search Recipes</h2>
+        <input type="text" id="searchInput" placeholder="Search by name or ingredients...">
+        <button id="searchButton">Search</button>
+      </section>
+        </div>
+      </section>
+
+    <!-- result bar -->
+      <section id="searchResults">
+        <h2>Search Results</h2>
+        <div id="searchResultsContainer">
+        </div>
+      </section>
+      <!-- Adding recipe section -->
+    <section id="addRecipe">
+      <h2>Add a New Recipe</h2>
+      <form id="recipeForm" enctype="multipart/form-data">
+        <label for="recipeName">Recipe Name:</label>
+        <input type="text" id="recipeName" name="recipeName" required>
+
+        <label for="ingredients">Ingredients:</label>
+        <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+
+        <label for="preparation">Preparation Steps:</label>
+        <textarea id="preparation" name="preparation" rows="6" required></textarea>
+
+        <label for="image">Image:</label>
+        <input type="file" id="image" name="image">
+
+        <button type="submit">Add Recipe</button>
+      </form>
+
+    </section>
+
+    <hr>
+
+    <section id="recipeList">
+      <h2>Recipes</h2>
+      <div id="recipesContainer">
+       
+      </div>
+    </section>
+  </main>
+
+  <script src="recipe.js"></script>
+</body>
+</html>
